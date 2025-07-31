@@ -61,7 +61,7 @@ void main() {
 			else if (infracao == 3) {
 				double jurosMulta = multaGrave * 1.10;
 				double parcelasMultaTotal = jurosMulta / 3;
-				print("Multa total: ${parcelasMultaTotal} 😑");
+				print("Multa total, parcelada em 3x com 10% de juros: ${parcelasMultaTotal} 😑");
 			}
 	}
 }
