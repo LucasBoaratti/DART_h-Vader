@@ -1,9 +1,3 @@
-// lucas(); -> Sem nada
-// lucas(idade); -> Com parâmetro
-/* lucas(idade) { -> Com parâmetro e com retorno
-       return idade;
-} */
-
 import 'dart:io';
 
 void main() {
@@ -19,7 +13,7 @@ void main() {
     print("\nEsse é o valor da divisão: $valorDivisao");
 }
 
-void menu() { 
+void menu() { //Função sem parâmetro e sem retorno
     print("Bem vindo(a) ao SisteLucas!");
 
     print("1 - Arroz");
@@ -28,19 +22,19 @@ void menu() {
     print("4 - Batata frita");
 }
 
-void soma(int a, int b) {
+void soma(int a, int b) { //Função com parâmetro, mas sem retorno
 	int valor = a + b;	
 	print("\nResultado da soma: $valor");
 }
 
-String nome(String nome) {
-    return "\n$nome";
-}
-
-double divisao(double a, double b) {
+double divisao(double a, double b) { //Função com parâmetro e com retorno
     double soma = a + b;
     print("\nEssa é a soma: $soma");
 
     double divisao = a / b;
     return divisao;
+}
+
+String nome(String nome) {
+    return "\n$nome";
 }
