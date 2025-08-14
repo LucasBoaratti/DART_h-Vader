@@ -19,4 +19,13 @@ void main() {
 	finally {
 		print("Encerrando o programa...");
 	}
+
+  List<int> lista = [1, 2, 3];
+
+  try {
+    print(lista[5]); //Erro: índice fora do range
+  }
+  on RangeError {
+    print("Erro ao encontrar número.");
+  }
 }
